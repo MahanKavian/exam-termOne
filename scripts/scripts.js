@@ -25,7 +25,7 @@ function hideContentHandler() {
     }
 }
 
-function createContents(e) {
+function createContents() {
     state.textIsOpen = Number(this.getAttribute('data-content-id'));
     document.querySelector('#contentBox').textContent = '';
     for (let i = 0; i < state.objElms.length; i++) {
